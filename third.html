@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Another Surprise Babaa ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff003c, #ff4d6d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 40px rgba(255, 0, 85, 0.6);
+            width: 90%;
+            max-width: 800px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 6px solid white;
+            box-shadow: 0 0 30px pink;
+            transition: 0.4s;
+        }
+
+        .photo:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 40px red;
+        }
+
+        button {
+            margin-top: 30px;
+            background: white;
+            color: #ff003c;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #ffe6eb;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .photo {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>I Love You Baba ❤️😘</h1>
+
+    <div class="photos">
+        <img src="photo1.jpg" class="photo" alt="Love Photo 1">
+        <img src="photo2.jpg" class="photo" alt="Love Photo 2">
+    </div>
+
+    <button onclick="goBack()">Back to My Love 💌</button>
+</div>
+
+<script>
+    function goBack() {
+        window.location.href = "surprise.html";
+    }
+</script>
+
+</body>
+</html>
